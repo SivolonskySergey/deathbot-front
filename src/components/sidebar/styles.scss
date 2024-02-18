@@ -1,0 +1,33 @@
+.navBlock {
+    border-bottom: 1px solid blue;
+    width: 100%;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 30px 15px;
+  cursor: pointer;
+}
+.brandTitle {
+  color: black;
+  /* color: `${theme.palette.mode === 'dark' ? colors.white.DEFAULT : colors.black.DEFAULT}`, */
+}
+.navList {
+  margin-bottom: 55px;
+}
+.navItem {
+  &:hover {
+    background-color: #1900D5 !important;
+    color: #fff;
+    border-radius: 4px;
+    & .MuiSvgIcon-root {
+      color: white !important;
+    }
+  }
+}
+.active {
+  background-color: #1900D5 !important;
+  color: #fff !important;
+  border-radius: 4px !important;
+}
